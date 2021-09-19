@@ -1,10 +1,9 @@
-from iMessageTools import *
 from datetime import date
 from random import randint
 import eel
+from tools import *
 
-eel.init("/Users/qtcoyle/git/private/projects/iMessagesPerDay/web")
-
+eel.init("web")
 
 @eel.expose
 def seeAllDatesPython():
@@ -13,12 +12,10 @@ def seeAllDatesPython():
     endDate = date.today().strftime("%Y-%m-%d")
     return "Number of chats between {} and {} is {}".format(startDate, endDate, byRange(startDate, endDate))
 
-
 @eel.expose
 def seeRangePython(startDate, endDate):
     print("Range button clicked")
     return "Number of chats between {} and {} is {}".format(startDate, endDate, byRange(startDate, endDate))
-
 
 @eel.expose    
 def random_python():
