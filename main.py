@@ -25,8 +25,3 @@ def random_python():
     return randint(1,100)
 
 eel.start("index.html", app_mode = False)
-<<<<<<< HEAD
-# Hello world vim edit
-=======
-# New changes
->>>>>>> undo_comment
