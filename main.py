@@ -5,8 +5,6 @@ from tools import *
 
 eel.init("web")
 
-# Fixing fake bug here
-
 @eel.expose
 def seeAllDatesPython():
     print("All dates button clicked")
